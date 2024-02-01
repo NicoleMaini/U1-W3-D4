@@ -1,6 +1,6 @@
 
 
-
+// bottone per estrarre i numeri
 const generateRandomNumber = () =>{
     const btnEnter = document.querySelector("button")
     const btnAndRandomNumberContainer = document.querySelector(".push-number")
@@ -11,7 +11,15 @@ const generateRandomNumber = () =>{
         randomNumber.innerText = Math.floor(Math.random()*100) + 1
         console.log(randomNumber);
 
-        btnAndRandomNumberContainer.appendChild(randomNumber)        
+        btnAndRandomNumberContainer.appendChild(randomNumber)  
+        
+        const cellNumber = document.querySelector(".cell-container")
+
+        console.dir(cellNumber);
+
+        if(randomNumber.innerText === cellNumber.innerText){
+            cellNumber.classList.add("check")
+        }
     }
 
 }
@@ -35,17 +43,9 @@ const generateBoard = () =>{
         cellDiv.appendChild(cell)
         board.appendChild(cellDiv)
         
-        generateRandomNumber()
-        const pushRandomNumber = document.querySelector(".push-number h2")
-        
-        if(pushRandomNumber === board[i]){
-            cell.classList.add("check")
-        }
-        
-        
-        console.log(pushRandomNumber);
-}
+    }
     
+    generateRandomNumber()
 }
 
 
