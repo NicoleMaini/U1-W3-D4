@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+}
+
+body, h3, h2{
+    margin: 0;
+} 
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+.container{
+    padding: 1rem;
+    border: 1px solid black ;
+    width: 70%;
+    margin-inline: auto;
+   
+}
+
+.cell-container{
+    display: inline-block;
+    width: 10%;
+    text-align: center;
+
+}
+
+.cell{
+
+}
+
+/* .push-number{
+    border: 1px solid black ;
+    display: inline-block;
+    width: 21%;
+} */
+
+ h3 {
+   margin: 0;
+   height: 3rem;
+   border: 1px solid black;
+   padding-top: 1rem;
+   margin: 0.25rem;
+}
+
+h2{
+    height: 70%
+}
+
+
+.btn-number{
+    display: block;
+    width: 30%;
+    margin-inline: auto;
+}
+
+.check{
+    background-color: black;
+    color: whitesmoke;
+}
+
+.push-number h2{}
