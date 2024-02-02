@@ -20,7 +20,7 @@ h1, h2, h3 {
 
 .cell-container{
     display: inline-block;
-    width: 10%;
+    width: 7%;
     text-align: center;
 
 }
@@ -44,14 +44,29 @@ h1, h2, h3 {
 }
 
 h2{
-    height: 70%
+    display: block;
+    width: 15%;
+    margin-block: 2rem;
+    text-align: center;
+    margin-inline: auto;
+    border: 1px black ;
+    border-style: dashed;
+    padding-block: 2rem;
+    font-size: 20px;
 }
 
 
 .btn-number{
     display: block;
-    width: 30%;
+    width: 15%;
     margin-inline: auto;
+    margin-block-end: 2rem;
+    background-color: black;
+    color: whitesmoke;
+    padding-block: 0.75rem;
+    padding-inline: 1.5rem;
+    border-radius: 5px;
+
 }
 
 .check{
